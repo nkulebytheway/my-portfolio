@@ -11,7 +11,7 @@ body {
 header {
     background-color: #333;
     color: white;
-    padding: 1rem;
+    padding: 0.5rem 1rem; /* Reduced padding for a smaller header height */
     position: fixed;
     width: 100%;
     top: 0;
@@ -30,8 +30,8 @@ header {
 }
 
 .header-image img {
-    width: 50px; /* Adjust size as needed */
-    height: 50px; /* Adjust size as needed */
+    width: 40px; /* Reduced size */
+    height: 40px; /* Reduced size */
     border-radius: 50%; /* Makes the image circular */
     border: 2px solid #6a0dad; /* Optional: Add a border to enhance visual appeal */
 }
@@ -52,7 +52,7 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 1rem;
+    margin: 0 0.5rem; /* Decreased margin between items */
 }
 
 nav ul li a {
