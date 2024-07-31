@@ -18,35 +18,36 @@ header {
     left: 0;
     z-index: 1000;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start; /* Align items to the left */
     align-items: center;
 }
 
+/* Navigation */
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    text-align: center;
-    flex: 1;
     display: flex;
-    justify-content: center;
-    flex-wrap: nowrap; /* Prevent wrapping */
+    flex-direction: row; /* Horizontal navigation */
+    align-items: center;
 }
 
 nav ul li {
-    margin: 0.5rem 1rem;
+    margin: 0 1rem;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1rem; /* Adjusted font size */
 }
 
 /* Header Image */
 .header-image {
     display: flex;
     align-items: center;
+    margin-right: 1rem; /* Space between image and navigation */
 }
 
 .header-image img {
@@ -166,18 +167,22 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start; /* Align items to the left in vertical layout */
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
     header {
         flex-direction: column;
+        align-items: flex-start; /* Align header items to the left */
     }
 
     .header-image {
-        margin-top: 1rem;
-    }
-
-    nav ul {
-        flex-direction: row;
-        justify-content: space-around;
-        flex-wrap: nowrap;
+        margin-bottom: 1rem;
     }
 
     section {
@@ -198,5 +203,19 @@ footer {
 
     #contact-form input, #contact-form textarea {
         width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul li a {
+        font-size: 0.9rem; /* Smaller font size for very small screens */
+    }
+
+    section h1 {
+        font-size: 1.8rem;
+    }
+
+    section p, section ul li {
+        font-size: 0.9rem;
     }
 }
