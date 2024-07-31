@@ -23,7 +23,6 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        
     </header>
     
     <section id="about" data-aos="flip-right"
@@ -83,18 +82,26 @@
         <p>I aspire to become a proficient software developer, contributing to impactful projects that make a difference. I'm particularly interested in software development, web development, databases, and information security.</p>
     </section>
     
-    <section id="contact" data-aos="flip-right">
+    <section id="contact" data-aos="flip-right"
+                        data-aos-offset="200"
+                        data-aos-delay="50"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out"
+                        data-aos-once="false"
+                        data-aos-anchor-placement="top-center">
         <h1>Contact</h1>
-        <form id="contact-form">
-            <label for="name">Name:</label>
+        <!-- Formspree form -->
+        <form id="contact-form" action="https://formspree.io/f/xanwoepe" method="POST">
+            <label for="name">Your Name:</label>
             <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
+            <label for="email">Your Email:</label>
             <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
+            <label for="message">Your Message:</label>
             <textarea id="message" name="message" required></textarea>
             <button type="submit">Send</button>
         </form>
     </section>
+    
     
     <footer>
         <p>&copy; 2024 Nkululeko Buthelezi</p>
