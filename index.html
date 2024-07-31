@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <header>
+        <div class="header-image">
+            <img src="fl1.jpg" alt="Profile Image">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#goals">Goals</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    
+    <section id="about" data-aos="flip-right"
+                        data-aos-offset="200"
+                        data-aos-delay="50"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out"
+                        data-aos-mirror="true"
+                        data-aos-once="false"
+                        data-aos-anchor-placement="top-center">
+        <h1>About Me</h1>
+        <p>Hello! I'm a university student with a passion for technology and programming. I enjoy diving into complex problems and finding innovative solutions. My journey in software development is just beginning, but I'm excited about the endless possibilities that lie ahead. Whether it’s building web applications, exploring new technologies, or collaborating on projects, I’m eager to learn and grow every day.</p>
+        <img src="undraw_Programming_re_kg9v.png" alt="A graphic representation of coding" class="about-image">
+    </section>
+    
+    <section id="skills" data-aos="flip-right"
+                            data-aos-offset="200"
+                            data-aos-delay="50"
+                            data-aos-duration="1000"
+                            data-aos-easing="ease-in-out"
+                            data-aos-mirror="true"
+                            data-aos-once="false"
+                            data-aos-anchor-placement="top-center">
+        <h1>Skills</h1>
+        <ul>
+            <li>Programming Languages: Java</li>
+            <li>Web Development: HTML, CSS, JavaScript</li>
+            <li>Database Management: SQL</li>
+            <li>Version Control: GitHub (currently learning)</li>
+            <li>Problem-Solving and Analytical Skills</li>
+        </ul>
+    </section>
+    
+    <section id="education" data-aos="flip-right"
+                            data-aos-offset="200"
+                            data-aos-delay="50"
+                            data-aos-duration="1000"
+                            data-aos-easing="ease-in-out"
+                            data-aos-mirror="true"
+                            data-aos-once="false"
+                            data-aos-anchor-placement="top-center">
+        <h1>Education</h1>
+        <p>Currently pursuing a degree in Computer Science at Tshwane University of Technology.
+             My education is complemented by hands-on experience through internships, coding challenges, and personal projects. I am continuously applying theoretical knowledge to practical scenarios to enhance my learning experience.</p>
+        <p>Expected Graduation: [2025]</p>
+    </section>
+    
+    <section id="goals" data-aos="flip-right"
+                        data-aos-offset="200"
+                        data-aos-delay="50"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out"
+                        data-aos-mirror="true"
+                        data-aos-once="false"
+                        data-aos-anchor-placement="top-center">
+        <h1>Goals</h1>
+        <p>I aspire to become a proficient software developer, contributing to impactful projects that make a difference. I'm particularly interested in software development, web development, databases, and information security.</p>
+    </section>
+    
+    <section id="contact" data-aos="flip-right">
+        <h1>Contact</h1>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Nkululeko Buthelezi</p>
+    </footer>
+
+    <!-- AOS JavaScript -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
