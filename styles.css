@@ -20,10 +20,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; /* Allow wrapping for mobile devices */
 }
 
-/* Navigation */
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -32,7 +30,7 @@ nav ul {
     flex: 1;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* Allow wrapping for mobile devices */
+    flex-wrap: nowrap; /* Prevent wrapping */
 }
 
 nav ul li {
@@ -177,7 +175,9 @@ footer {
     }
 
     nav ul {
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: nowrap;
     }
 
     section {
