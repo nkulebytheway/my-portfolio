@@ -128,6 +128,7 @@ section ul li {
     max-width: 600px;
     margin: 0 auto;
     text-align: center;
+    padding: 1rem; /* Added padding for better spacing inside the form */
 }
 
 #contact-form label {
@@ -148,10 +149,10 @@ section ul li {
     background-color: #333;
     color: white;
     border: none;
-    padding: 0.7rem 1.5rem;
+    padding: 0.5rem 1rem; /* Reduced padding for a smaller button */
     border-radius: 4px;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 0.9rem; /* Slightly smaller font size for a compact look */
 }
 
 #contact-form button:hover {
@@ -163,7 +164,7 @@ footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 1rem;
+    padding: 0.5rem; /* Reduced padding for a smaller footer height */
     position: relative;
     bottom: 0;
     width: 100%;
@@ -182,6 +183,8 @@ footer {
     
     nav {
         margin-bottom: 1rem; /* Space below navigation */
+        width: 100%; /* Full width for mobile view */
+        justify-content: center; /* Center the navigation items */
     }
     
     nav ul {
